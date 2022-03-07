@@ -1,0 +1,369 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  background-color: white;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 1200px;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header {
+  padding: 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin-left: 30px;
+}
+a {
+  text-decoration: none;
+  color: #070439;
+}
+
+.header {
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.header .container .box-one {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+.header .container .text {
+  display: flex;
+  flex-direction: column;
+}
+.header .container h3 {
+  font-size: 30px;
+  line-height: 1.4;
+  color: #070439;
+}
+
+.header .container p {
+  color: #585989;
+  width: 500px;
+  line-height: 1.2;
+}
+
+.header .container img {
+  width: 100%;
+}
+
+.header .container .form input:first-child {
+  /* padding-top: 18px;
+  padding-right: 103px; */
+  height: 39px;
+  width: 282px;
+  margin-right: 10px;
+}
+
+.header .container .form {
+  display: block;
+}
+.header .container .form input:last-child {
+  height: 39px;
+  width: 159px;
+  color: white;
+  background-color: #3165f6;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .header .container .box-one {
+    flex-direction: column-reverse;
+  }
+  .header .container .box-one .img {
+    margin-top: 50px;
+  }
+}
+
+.info {
+  padding: 20px;
+  display: flex;
+  background-color: hsl(240, 75%, 98%);
+  position: relative;
+}
+.info::after {
+  content: "";
+  position: absolute;
+  background-size: cover;
+  top: -50px;
+  left: 0;
+  background-image: url(./fylo-landing-page-with-two-column-layout-master/images/bg-curve-desktop.svg);
+  height: 60px;
+  width: 100%;
+}
+
+.info .box-two {
+  display: flex;
+}
+
+.info .box-two .text-two {
+  display: flex;
+  flex-direction: column;
+}
+.info .box-two .text-two h3 {
+  font-size: 30px;
+  color: #070439;
+}
+.info .box-two .text-two p {
+  color: #585989;
+}
+
+.info .box-two .img-to img {
+  max-width: 100%;
+  margin-left: 50px;
+}
+.info .box-two .text-two a {
+  text-decoration: none;
+  color: #070439;
+  border-bottom: 1px solid;
+  border-bottom-color: green;
+  width: fit-content;
+  padding: 5px 0;
+  color: #3da08f;
+  position: relative;
+  margin-bottom: 50px;
+}
+.info .box-two .text-two a img {
+  position: absolute;
+  right: -22px;
+  top: 8px;
+}
+.info .box-two .text-two .box-info {
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+  width: 80%;
+  position: relative;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.info .box-two .text-two .box-info .p-s {
+  letter-spacing: 1px;
+  line-height: 1.8;
+  width: 300px;
+}
+.info .box-two .text-two .box-info .small-box {
+  display: flex;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.info .box-two .text-two .box-info .pht {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  margin-right: 20px;
+}
+.info .box-two .text-two .box-info .small-box h5 {
+  margin: 0;
+  margin-top: 5px;
+  color: #070439;
+}
+.info .box-two .text-two .box-info p {
+  margin: 0;
+  font-size: 10px;
+}
+
+@media (max-width: 767px) {
+  .info .box-two .text-two .box-info .p-s {
+    max-width: 100%;
+  }
+  .info .box-two {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .info .container {
+    width: 100%;
+
+    margin-left: 80px;
+  }
+  .info .container .text-two {
+    text-align: center;
+    align-items: center;
+  }
+  .info .container .text-two h3 {
+    font-size: 20px;
+  }
+  .info .container .text-two p {
+    font-size: 13px;
+  }
+}
+
+.content {
+  background-color: #575989;
+  margin-top: 80px;
+}
+.content .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px;
+}
+.content .container text {
+  text-align: center;
+  align-items: center;
+}
+
+.content .container h4 {
+  font-size: 30px;
+  color: white;
+}
+.content .container p {
+  width: 500px;
+  padding: 20 0px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.content .container form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.content .container form input:first-child {
+  height: 39px;
+  width: 400px;
+  margin-right: 10px;
+}
+.content .container form input:last-child {
+  display: block;
+  margin-top: 12px;
+  height: 39px;
+  width: 159px;
+  color: white;
+  background-color: #3165f6;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .content .container {
+    flex-direction: column;
+  }
+  .content .container .text {
+    text-align: center;
+  }
+
+  .content .container .text p {
+    width: 300px;
+  }
+  .content .container form input:first-child {
+    width: 300px;
+  }
+
+  .content .container form input:last-child {
+    width: 280px;
+  }
+}
+
+footer {
+  background-color: #07043b;
+  padding: 20px;
+}
+
+footer .container .box-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: aliceblue;
+}
+
+footer .container ul {
+  display: block;
+  margin-bottom: 20px;
+}
+footer .container ul li {
+  color: #ccc;
+  padding: 10px 0px;
+}
+footer .container ul li a {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+footer .container .solo {
+  padding: 40px;
+  margin-right: 300px;
+}
+footer .container .solo img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+footer .container .solo li {
+  padding: 5px 0;
+  margin-right: 60px;
+}
+
+footer .container ul li {
+  margin-bottom: 5px;
+}
+
+footer .container .box-1 .two {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  footer .container .box-1 {
+    flex-direction: column;
+  }
+  footer .container .box-1 .solo {
+    width: 500px;
+  }
+  footer .container .box-1 .two {
+    justify-content: center;
+  }
+}
